@@ -22,9 +22,9 @@
           <br />
         </div>
       <div>
-      </div class="col-4 slogan">
+      <div class="col-4 slogan">
         Splurting out unsolicited advice about entrepreneurship since 2016
-      <div>
+      </div>
       <div class="col-5 links">
           <%= link_to 'Contribuite', '#' %>
           <%= link_to 'About', '#' %>
@@ -34,8 +34,23 @@
     <hr />
 
       <br class="clear" />
+ <div class="container">
+      <%= yield %>
+    </div>
 
-    </header>
-    <%= yield %>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+                <div class="col-6">
+        <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
+      </div>
+      <div class="col-6 footer-blurb">
+        Proudly hacked by <a href="https://jeanvelonis.netlify.com/">Jean Velonis</a><br />
+        Want to build your own Splurty Web App - <a href="https://online.bootcampspot.com">Learn how to code here</a>
+      </div>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
